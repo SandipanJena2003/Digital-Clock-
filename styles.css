@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100vh;
+  width: 100vw;
+  font-family: "Segoe UI", Roboto, sans-serif;
+  display: flex;
+  
+  justify-content: center;
+  align-items: center;
+  color: #0b172a;
+  background: linear-gradient(135deg, #fdfeff, #aaacae);
+  transition: background 0.5s ease, color 0.5s ease;
+}
+nav{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:100%;
+  text-align: center;
+  padding: 1rem;
+  font-size: 5rem;
+  font-weight: bold;
+  color: #2563eb;
+  font-family:  'Roboto', sans-serif;
+}
+.container {
+  text-align: center;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  background: white;
+  backdrop-filter: blur(10px);
+  height: 35%;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  letter-spacing: 0.5px;
+}
+
+.clock-container {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+
+.clock {
+  font-size: 4rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  min-width: 8ch;
+  color: #2563eb;
+  font-family:  'Orbitron', sans-serif;
+}
+
+.ampm {
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
+  color: #827f7f;
+  text-transform: uppercase;
+}
+
+.controls {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/*Light Mode*/
+
+.btn {
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  background: #2563eb;
+  color: white;
+  font-weight: 600;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+  background: #1d4ed8;
+  transform: scale(1.05);
+}
+.btn-toggle{
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  background: #d4d6db;
+  color: black;
+  font-weight: 600;
+  transition: background 0.3s, transform 0.2s;
+}
+.fa-moon{
+    color: blue;
+}
+.fa-sun{
+    color: orange;
+}
+
+
+/* Dark Mode */
+
+
+.dark {
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+  color: #f8fafc;
+}
+
+.dark .container {
+  background: rgba(30,41,59,0.6);
+}
+
+.dark .ampm {
+  color: #f1f5f9;
+}
+
+.dark .btn-toggle {
+  background: #334155;
+  color: #f8fafc;
+}
